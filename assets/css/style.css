@@ -1,0 +1,42 @@
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 40px 20px; line-height: 1.6; color: #333; font-size: 14px; }
+a { color: #1772d0; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.intro { display: flex; align-items: center; gap: 50px; margin-bottom: 40px; }
+.intro-text { flex: 2; }
+.intro-pic { flex: 1; text-align: center; }
+.intro-pic img { width: 100%; max-width: 200px; border-radius: 5%; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+
+h1 { margin-top: 0; font-size: 1.8em; font-weight: 600; }
+h2 { font-size: 1.25em; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-top: 40px; color: #222; }
+
+.item { display: flex; gap: 25px; margin-bottom: 35px; align-items: flex-start; }
+.item-img { flex: 1; }
+.item-img img { width: 100%; max-width: 180px; border: 1px solid #ddd; padding: 2px; }
+.item-content { flex: 3; }
+.title { font-weight: bold; font-size: 1.05em; color: #111; }
+.authors { color: #444; margin: 5px 0; font-size: 0.95em; }
+.venue { font-style: italic; color: #333; font-weight: 600; font-size: 0.95em; margin-bottom: 5px; }
+.highlight { color: #d93838; font-weight: bold; }
+
+.links { margin-top: 10px; }
+.links a { display: inline-block; margin-right: 12px; font-size: 0.9em; font-weight: 500; color: #1772d0; }
+
+ul.timeline { padding-left: 20px; }
+ul.timeline li { margin-bottom: 10px; }
+
+.footer { text-align: center; margin-top: 60px; font-size: 0.9em; color: #888; border-top: 1px solid #eee; padding-top: 20px; }
+
+@media (max-width: 700px) {
+  .intro, .item { flex-direction: column; }
+  .intro-pic img, .item-img img { max-width: 140px; }
+}
+
+/* 栏目导航与通用交互 */
+.section-nav { display: flex; flex-wrap: wrap; gap: 10px 20px; margin-bottom: 30px; padding-bottom: 14px; border-bottom: 1px solid #eee; }
+summary { cursor: pointer; color: #1772d0; font-weight: 500; margin-bottom: 20px; }
+.item-content.full-width { flex: unset; width: 100%; }
+a:focus-visible, summary:focus-visible { outline: 2px solid #1772d0; outline-offset: 4px; }
+img { height: auto; }
+.intro-text, .item-content { min-width: 0; overflow-wrap: anywhere; }
+section { scroll-margin-top: 20px; }

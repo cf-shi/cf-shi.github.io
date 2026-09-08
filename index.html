@@ -3,101 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chunfeng Shi — research in cooperative navigation, unmanned vehicles, and multi-sensor information fusion. Publications, experience, and academic activities.">
   <title>Chunfeng Shi - Academic Homepage</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 40px 20px; line-height: 1.6; color: #333; font-size: 14px; }
-    a { color: #1772d0; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    
-    .intro { display: flex; align-items: center; gap: 50px; margin-bottom: 40px; }
-    .intro-text { flex: 2; }
-    .intro-pic { flex: 1; text-align: center; }
-    .intro-pic img { width: 100%; max-width: 200px; border-radius: 5%; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-    
-    h1 { margin-top: 0; font-size: 1.8em; font-weight: 600; }
-    h2 { font-size: 1.25em; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-top: 40px; color: #222; }
-    
-    .item { display: flex; gap: 25px; margin-bottom: 35px; align-items: flex-start; }
-    .item-img { flex: 1; }
-    .item-img img { width: 100%; max-width: 180px; border: 1px solid #ddd; padding: 2px; }
-    .item-content { flex: 3; }
-    .title { font-weight: bold; font-size: 1.05em; color: #111; }
-    .authors { color: #444; margin: 5px 0; font-size: 0.95em; }
-    .venue { font-style: italic; color: #333; font-weight: 600; font-size: 0.95em; margin-bottom: 5px; }
-    .highlight { color: #d93838; font-weight: bold; }
-    
-    .links { margin-top: 10px; }
-    .links a { display: inline-block; margin-right: 12px; font-size: 0.9em; font-weight: 500; color: #1772d0; }
-    
-    ul.timeline { padding-left: 20px; }
-    ul.timeline li { margin-bottom: 10px; }
-    
-    .footer { text-align: center; margin-top: 60px; font-size: 0.9em; color: #888; border-top: 1px solid #eee; padding-top: 20px; }
-    
-    @media (max-width: 700px) {
-      .intro, .item { flex-direction: column; }
-      .intro-pic img, .item-img img { max-width: 140px; }
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <nav class="section-nav" aria-label="Page sections">
+    <a href="#about">About</a>
+    <a href="#publications">Publications</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects &amp; Patents</a>
+    <a href="#honors">Honors</a>
+    <a href="#service">Academic Activities</a>
+  </nav>
+  <main>
 
   <!-- 个人简介部分 -->
-  <div class="intro">
+  <section class="intro" id="about" aria-label="About Chunfeng Shi">
     <div class="intro-text">
       <h1>Chunfeng Shi</h1>
-      <p>I received my Ph.D. degree in Instrument Science and Technology from Southeast University in June 2026, supervised by <a href="https://ins.seu.edu.cn/cxy/list.htm" target="_blank">Prof. Xiyuan Chen</a>. Prior to this, I worked as a Network Security Engineer at ZTE Corporation from 2020 to 2022. I received my Bachelor's and Master's degrees from Southeast University.</p>
+      <p>I received my Ph.D. degree in Instrument Science and Technology from Southeast University in June 2026, supervised by <a href="https://ins.seu.edu.cn/cxy/list.htm" target="_blank" rel="noopener noreferrer">Prof. Xiyuan Chen</a>. Prior to this, I worked as a Network Security Engineer at ZTE Corporation from 2020 to 2022. I received my Bachelor's and Master's degrees from Southeast University.</p>
       <p>My research interests lie in the scope of Swarm Cooperative Navigation and Positioning for Unmanned Surface/Underwater Vehicles (USVs/UUVs), Navigation Systems in Complex Environments, and Multi-sensor Information Fusion.</p>
       <p><strong>Email:</strong> <a href="mailto:chunfeng.shi@hhu.edu.cn">chunfeng.shi@hhu.edu.cn</a> <br>
-      <strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=r25xzZMAAAAJ&gmla=AKCpqFwtmZhhVBZrQLlV8JEfUvgUhVSQH_AP_bmyXnlnpxowRdKanwTtqGfCGUef5JMKWX6M0yxqUqv-gRrWnDeIsH2FabyCIfBF6t9JbvxMi8fNWg0" target="_blank">Chunfeng Shi</a> <br>
-      <strong>Address:</strong> College of Artificial Intelligence and Automation, Hohai Univercity, Changzhou, China </p>
+      <strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=r25xzZMAAAAJ" target="_blank" rel="noopener noreferrer">Chunfeng Shi</a> <br>
+      <strong>Address:</strong> College of Artificial Intelligence and Automation, Hohai University, Changzhou, China </p>
     </div>
     <div class="intro-pic">
-      <img src="profile.jpg" alt="Profile Photo">
+      <img src="assets/images/profile.jpg" alt="Chunfeng Shi">
     </div>
-  </div>
+  </section>
 
-  <!-- 论文发表部分 -->
+  <!-- 论文发表部分：复制一个完整的 div.item 新增论文；前六篇为当前重点展示 -->
+  <section id="publications">
   <h2>Publications</h2>
-  
+
   <div class="item">
     <div class="item-img">
-      <img src="paper1.jpg" alt="Paper Image">
+      <img src="assets/images/paper1.jpg" alt="Research illustration: Smoothing Boundary Layer-Based Iterative CKF and Its Application to Attitude Estimation in Cooperative USV Swarms" loading="lazy">
     </div>
     <div class="item-content">
       <div class="title">Smoothing Boundary Layer-Based Iterative CKF and Its Application to Attitude Estimation in Cooperative USV Swarms </div>
       <div class="authors"><strong>Chunfeng Shi</strong>, Xiyuan Chen*, Xuyang Jiang, Yulu Zhong. </div>
       <div class="venue">IEEE Transactions on Industrial Informatics (TII), 2026 <span class="highlight"> (SCI, TOP, IF: 9.9)</span> </div>
       <div class="links">
-        <a href="https://doi.org/10.1109/TII.2025.3609033" target="_blank">[Paper Link]</a>
+        <a href="https://doi.org/10.1109/TII.2025.3609033" target="_blank" rel="noopener noreferrer">[Paper Link]</a>
       </div>
     </div>
   </div>
 
   <div class="item">
     <div class="item-img">
-      <img src="paper2.jpg" alt="Paper Image">
+      <img src="assets/images/paper2.jpg" alt="Research illustration: An Improved Fuzzy Adaptive Iterated SCKF for Cooperative Navigation" loading="lazy">
     </div>
     <div class="item-content">
       <div class="title">An Improved Fuzzy Adaptive Iterated SCKF for Cooperative Navigation </div>
       <div class="authors"><strong>Chunfeng Shi</strong>, Xiyuan Chen*, Junwei Wang. </div>
       <div class="venue">IEEE-ASME Transactions on Mechatronics, 2024 <span class="highlight"> (SCI, TOP, IF: 7.3)</span> </div>
       <div class="links">
-        <a href="https://doi.org/10.1109/TMECH.2024.3359602" target="_blank">[Paper Link]</a>
+        <a href="https://doi.org/10.1109/TMECH.2024.3359602" target="_blank" rel="noopener noreferrer">[Paper Link]</a>
       </div>
     </div>
   </div>
 
   <div class="item">
     <div class="item-img">
-      <img src="paper3.jpg" alt="Paper Image">
+      <img src="assets/images/paper3.jpg" alt="Research illustration: DMRCKF: A resampling-free robust CKF for USV swarm cooperative navigation under uncertain measurements" loading="lazy">
     </div>
     <div class="item-content">
       <div class="title">DMRCKF: A resampling-free robust CKF for USV swarm cooperative navigation under uncertain measurements </div>
       <div class="authors"><strong>Chunfeng Shi</strong>, Xiyuan Chen*, Yulu Zhong, Ning Gao. </div>
       <div class="venue">Ocean Engineering, 2026 <span class="highlight"> (SCI, TOP, IF: 5.5)</span> </div>
       <div class="links">
-        <a href="https://doi.org/10.1016/j.oceaneng.2026.126313" target="_blank">[Paper Link]</a>
+        <a href="https://doi.org/10.1016/j.oceaneng.2026.126313" target="_blank" rel="noopener noreferrer">[Paper Link]</a>
       </div>
     </div>
   </div>
@@ -105,14 +82,14 @@
     <!-- 4 -->
     <div class="item">
     <div class="item-img">
-      <img src="paper4.jpg" alt="Paper Image">
+      <img src="assets/images/paper4.jpg" alt="Research illustration: An improved multi-source information fusion method for IMU compensation of missile" loading="lazy">
     </div>
     <div class="item-content">
       <div class="title">An improved multi-source information fusion method for IMU compensation of missile</div>
       <div class="authors"><strong>Chunfeng Shi</strong>, Xiyuan Chen*, Junwei Wang. </div>
       <div class="venue">EURASIP Journal on Advances in Signal Processing, 2023 <span class="highlight"> (SCI, IF: 1.9)</span> </div>
       <div class="links">
-        <a href="https://doi.org/10.1186/s13634-023-01047-6" target="_blank">[Paper Link]</a>
+        <a href="https://doi.org/10.1186/s13634-023-01047-6" target="_blank" rel="noopener noreferrer">[Paper Link]</a>
       </div>
     </div>
   </div>
@@ -120,14 +97,14 @@
         <!-- 5 -->
   <div class="item">
     <div class="item-img">
-      <img src="paper5.jpg" alt="Paper Image">
+      <img src="assets/images/paper5.jpg" alt="Research illustration: A Node Selection Method Based on Information Gain and Bionic Neighborhood Perception for Cooperative Navigation" loading="lazy">
     </div>
     <div class="item-content">
       <div class="title">A Node Selection Method Based on Information Gain and Bionic Neighborhood Perception for Cooperative Navigation </div>
       <div class="authors"><strong>Chunfeng Shi</strong>, Xiyuan Chen*, Weiming Jing, Xuyang Jiang. </div>
       <div class="venue">5th  International Symposium on Aerospace Engineering and Systems (ISAES), 2026 <span class="highlight"> (Best Paper Award)</span> </div>
       <div class="links">
-        <a href="https://doi.org/10.1109/ISAES70982.2026.11669703" target="_blank">[DOI Link]</a>
+        <a href="https://doi.org/10.1109/ISAES70982.2026.11669703" target="_blank" rel="noopener noreferrer">[DOI Link]</a>
       </div>
     </div>
   </div>
@@ -135,46 +112,49 @@
       <!-- 6 -->
     <div class="item">
     <div class="item-img">
-      <img src="paper6.jpg" alt="Paper Image">
+      <img src="assets/images/paper6.jpg" alt="Research illustration: Adaptive CKF for AUV Cluster Cooperative Navigation in Complex Marine Environments with Random Delays and Outlier Measurements" loading="lazy">
     </div>
     <div class="item-content">
       <div class="title">Adaptive CKF for AUV Cluster Cooperative Navigation in Complex Marine Environments with Random Delays and Outlier Measurements</div>
       <div class="authors"><strong>Chunfeng Shi</strong>, Xiyuan Chen*, Zhiting Yao, Wenqi Fu, Ning Gao. </div>
       <div class="venue">35th International Ocean and Polar Engineering Conference (ISOPE), 2025</div>
       <div class="links">
-        <a href="https://onepetro.org/ISOPEIOPEC/proceedings-abstract/ISOPE25/ISOPE25/ISOPE-I-25-273/713462" target="_blank">[Paper Link]</a>
+        <a href="https://onepetro.org/ISOPEIOPEC/proceedings-abstract/ISOPE25/ISOPE25/ISOPE-I-25-273/713462" target="_blank" rel="noopener noreferrer">[Paper Link]</a>
       </div>
     </div>
   </div>
 
   <details>
-    <summary style="cursor: pointer; color: #1772d0; font-weight: 500; font-size: 1.1em; margin-bottom: 20px;">Show More ...</summary>
+    <summary>Show More ...</summary>
         <!-- 7 -->
     <div class="item">
-    <div class="item-content" style="flex: unset; width: 100%;">
+    <div class="item-content full-width">
       <div class="title">A Correcting Accelerometer Errors Algorithm for SINS/CNS Integrated System</div>
       <div class="authors"><strong>Chunfeng Shi</strong>, Xiyuan Chen*, Junwei Wang. </div>
       <div class="venue">International Conference on Guidance, Navigation and Control (ICGNC), 2022</div>
       <div class="links">
-        <a href="https://doi.org/10.1007/978-981-19-6613-2_451" target="_blank">[Paper Link]</a>
+        <a href="https://doi.org/10.1007/978-981-19-6613-2_451" target="_blank" rel="noopener noreferrer">[Paper Link]</a>
       </div>
     </div>
   </div>
         <!-- 8 -->
   <div class="item">
-    <div class="item-content" style="flex: unset; width: 100%;">
+    <div class="item-content full-width">
       <div class="title">Multi-source error analysis and simulation of high accuracy strapdown inertial navigation system in overload section of ballistic missile</div>
       <div class="authors">Xiyuan Chen, <strong>Chunfeng Shi</strong>, Di Liu.</div>
       <div class="venue">Journal of Chinese Inertial Technology, 2020 <span class="highlight"> (EI)</span></div>
       <div class="links">
-        <a href="https://doi.org/10.13695/j.cnki.12-1222/o3.2020.01.005" target="_blank">[Paper Link]</a>
+        <a href="https://doi.org/10.13695/j.cnki.12-1222/o3.2020.01.005" target="_blank" rel="noopener noreferrer">[Paper Link]</a>
       </div>
     </div>
   </div>
   </details>
-  
+
   <!-- 教育与工作经历 -->
-  <h2>Education and Works</h2>
+  </section>
+
+  <section id="experience">
+  <h2>Education and Experience</h2>
   <ul class="timeline">
     <li><strong>2022 - 2026:</strong> Ph.D. in Instrument Science and Technology, Southeast University.</li>
     <li><strong>2020 - 2022:</strong> Network Security Engineer, ZTE Corporation.</li>
@@ -184,23 +164,29 @@
   </ul>
 
   <!-- 科研项目与专利 -->
-  <h2>Projects & Patents</h2>
+  </section>
+
+  <section id="projects">
+  <h2>Projects &amp; Patents</h2>
   <ul class="timeline">
     <li><strong>Project (PI):</strong> Research on USV Formation Cooperative Navigation and Positioning Technology under Complex Sea States (Jiangsu Postgraduate Research and Innovation Plan).</li>
     <li><strong>Patent:</strong> Xiyuan Chen, <strong>Chunfeng Shi</strong>, Junwei Wang. A fuzzy adaptive cooperative navigation information fusion method (Granted, CN116147619B)</li>
     <li><strong>Patent:</strong> Xiyuan Chen, <strong>Chunfeng Shi</strong>, Zhen Ma, Xin Shao. SINS data processing device and its multi-source error modeling method under overload environments (Granted, CN109141418B)</li>
 
-    <details style="grid-column: 1 / -1; margin-top: 5px;">
-      <summary style="cursor: pointer; color: #1772d0; font-weight: 500;">Show More ...</summary>
-      <ul class="timeline" style="margin-top: 10px;">
+  </ul>
+  <details>
+      <summary>Show More ...</summary>
+      <ul class="timeline">
         <li><strong>Patent:</strong> Xiyuan Chen, <strong>Chunfeng Shi</strong>, Di Liu. A SINS/CNS integrated navigation method for correcting accelerometer errors (Granted, CN111707259B)</li>
         <li><strong>Patent:</strong> Xiyuan Chen, <strong>Chunfeng Shi</strong>. An inertial/celestial integrated navigation method for improving position error estimation accuracy (Granted, CN111060097B)</li>
         <li><strong>Patent:</strong> Hong Zeng, <strong>Chunfeng Shi</strong>, Junyi Yang, et al. A dynamic personalized song recommendation system and method based on EEG headset (Granted, CN105045898B)</li>
       </ul>
-    </details>  
-  </ul>
+  </details>
 
   <!-- 荣誉奖项 -->
+  </section>
+
+  <section id="honors">
   <h2>Honors</h2>
   <ul class="timeline">
     <li><strong>2026:</strong> Outstanding Graduate, Southeast University.</li>
@@ -209,9 +195,10 @@
     <li><strong>2023:</strong> Special Commendation Gold Medal, International Exhibition of Inventions Geneva.</li>
     <li><strong>2022:</strong> Top 10 Scientific and Technological Advances in Electronic Information of Jiangsu Province.</li>
 
-    <details style="grid-column: 1 / -1; margin-top: 5px;">
-      <summary style="cursor: pointer; color: #1772d0; font-weight: 500;">Show More ...</summary>
-      <ul class="timeline" style="margin-top: 10px;">
+  </ul>
+  <details>
+      <summary>Show More ...</summary>
+      <ul class="timeline">
         <li><strong>2022:</strong> Second Prize, China Sensor Innovation and Entrepreneurship Competition.</li>
         <li><strong>2016:</strong> Honorable Mention, Interdisciplinary Contest in Modeling (ICM).</li>
         <li><strong>2016:</strong> First Prize, "Beidou Cup" National Youth Sci & Tech Innovation Competition.</li>
@@ -219,20 +206,25 @@
         <li><strong>2015:</strong> First Prize, 3rd National Virtual Instrument Competition.</li>
         <li><strong>2015:</strong> Second Prize, China Robot Competition and RoboCup Open.</li>
       </ul>
-    </details>
-  </ul>
+  </details>
 
   <!-- 学术活动 -->
+  </section>
+
+  <section id="service">
   <h2>Academic Activities</h2>
   <ul class="timeline">
     <li><strong>Reviewer:</strong> IEEE Transactions on Industrial Informatics (TII), IEEE Transactions on Instrumentation and Measurement (TIM), Defence Technology, International Conference on Intelligent Computing (ICIC), etc.</li>
     <li><strong>Co-author:</strong> Textbooks "Introduction to Information and Communication Networks" and "Fundamentals of Metrology".</li>
   </ul>
-  
-  <!-- 页脚部分 -->
-  <div class="footer">
+
+  </section>
+  </main>
+
+  <!-- 页脚部分：发布内容更新时手动修改日期 -->
+  <footer class="footer">
     <p>Last update: Sep. 2026.</p>
-  </div>
+  </footer>
 
 </body>
 </html>
